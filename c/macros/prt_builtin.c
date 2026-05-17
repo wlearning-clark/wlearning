@@ -13,7 +13,7 @@ int main() {
     printf("__TIME__: %s\n", __TIME__);
     printf("__TIMESTAMP__ : %s\n", __TIMESTAMP__);
     printf("__STDC__ : %d\n", __STDC__);
-    printf("__STDC_VERSION__ : %d\n", __STDC_VERSION__);
+    printf("__STDC_VERSION__ : %ld\n", __STDC_VERSION__);
     printf("__GNUC__ : %d\n", __GNUC__);
     printf("__GNUC_MINOR__ : %d\n", __GNUC_MINOR__);
     printf("__GNUC_PATCHLEVEL__ : %d\n", __GNUC_PATCHLEVEL__);
