@@ -1,0 +1,28 @@
+     1                                  segment .data
+     2 00000000 04000000                a   dd    4
+     3 00000004 CDCC0C40                b   dd    2.2
+     4 00000008 00000000<rep Ah>        c   times 10 dd 0
+     5 00000030 01000200                d   dw    1, 2
+     6 00000034 FF                      e   db    0xff
+     7 00000035 68656C6C6F20776F72-     f   db    "hello world", 0
+     7 0000003E 6C6400             
+     8                                  
+     9                                  segment .bss
+    10 00000000 ????????                g resd  1
+    11 00000004 <res 28h>               h resd  10
+    12 0000002C <res 190h>              i resd  100
+    13                                  
+    14                                  segment .text
+    15                                  global main
+    16                                  main:
+    17 00000000 55                        push rbp
+    18 00000001 4889E5                    mov rbp, rsp
+    19 00000004 4883EC20                  sub rsp, 0x20
+    20                                  
+    21 00000008 31C0                      xor eax, eax
+    22                                  
+    23 0000000A 4883C420                  add rsp, 0x20
+    24 0000000E 4889EC                    mov rsp, rbp
+    25 00000011 5D                        pop rbp
+    26 00000012 C3                        ret
+    27                                  
