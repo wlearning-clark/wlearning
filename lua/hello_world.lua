@@ -71,11 +71,10 @@ print(0x3fffff)
 print(0x7fffff)
 print(0xffffff)
 
-
 -- For Addressing Bus. it unit as bit
 -- For Memory, it unit as byte that is 1 byte = 8 bit
 --
--- For 8 bit Bus
+-- For 8 bit
 -- 0000 0000
 -- Maximum addressing:
 -- 1111 1111
@@ -85,8 +84,8 @@ print(0xffffff)
 -- 255 
 -- Actual Addressable Memory Size:
 -- 0 to 255 byte => 256 byte(B)
-
--- For 16 bit Bus
+--
+-- For 16 bit
 -- 0000 0000 0000 0000
 -- Maximum addressing
 -- 1111 1111 1111 1111
@@ -97,7 +96,7 @@ print(0xffffff)
 -- Actual Addressable Memory Size:
 --                             KB
 -- 0 to 65535 byte => 65536 / 1024  = 64 kilobyte(KB)
-
+--
 -- 32 bit
 -- 0000 0000 0000 0000 0000 0000 0000 0000
 -- Maximum addressing
@@ -109,7 +108,7 @@ print(0xffffff)
 -- Actual Addressable Memory Size:
 --                                       KB     MB     GB
 -- 0 to 4294967295 byte => 4294967296 / 1024 / 1024 / 1024 = 4 gigabyte(GB)
-
+-- 
 -- 64 bit
 -- 0000 0000 0000 0000 0000 0000 0000 0000
 -- 0000 0000 0000 0000 0000 0000 0000 0000
