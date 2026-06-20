@@ -123,3 +123,87 @@ print(0xffffff)
 --                                                    KB     MB     GB     TB     PB     EB
 -- 0 to 1.844674407×10¹⁹ => (1.844674407×10¹⁹ + 1) / 1024 / 1024 / 1024 / 1024 / 1024 / 1024 = 16 exabyte(EB)
 
+print(math.ceil(3.3))
+print(math.modf(3.8))
+
+print(math.floor(2.5 + 0.5))
+print(math.floor(3.5 + 0.5))
+
+print(math.maxinteger)
+print(math.maxinteger + 1 )
+print(math.mininteger)
+print(math.mininteger - 1 )
+print(math.maxinteger * 2)
+
+x = string.gsub("hello world", "(%w+)", "%1 %1")
+print(x)
+
+-- s = "hello world from Lua"
+-- for w in string.gmatch(s, "%a+") do
+-- print(w)
+-- end
+
+t = {}
+s = "from=world, to=Lua"
+for k, v in string.gmatch(s, "(%w+)=(%w+)") do
+  t[k] = v
+  print(k)
+  print(v)
+end
+
+a = string.len("a000bc000")
+print(a)
+
+s = "CHAR"
+s1 = string.lower(s)
+print(s)
+print(s1)
+
+s = "a text"
+s1 = string.gsub(s, "text", "content")
+print(s)
+print(s1)
+
+s2 =string.byte("Abcb8",5)
+print(s2)
+
+c1 = string.char(88)
+print(c1)
+print(#s .. "char")
+
+long_str = [[ taeu
+tnahu
+ntashu
+crmerah
+]]
+print(#long_str)
+
+a = tonumber("32")
+print(a)
+print("type of a is " .. type(a))
+
+print("type of a is " .. type(tostring(a)))
+
+s = "str"
+print(string.rep(s, 3))
+
+s1 = "lua is amazing"
+print(string.reverse(s1))
+
+print(string.format("string: %s", s1))
+
+local bad
+local good
+t = io.read("a")
+string.gsub(t, "bad", "good")
+io.write(t)
+
+-- table
+
+a = {}
+
+
+-- error("an error code")
+
+local m = require('math')
+

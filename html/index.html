@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>html elements</title>
+  </head>
+  <style>
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+    data::hover::after {
+      content: attr(value);
+    }
+  </style>
+  <body>
+    <i>Muscle</i>
+    <p>
+      The Latin phrase <i lang="la">Veni, vidi, vici</i> is often mentioned in
+      music, art, and literature.
+    </p>
+
+    <dl>
+      <dt>data types</dt>
+      <dd>int</dd>
+      <dd>string</dd>
+      <dt>walls</dt>
+      <dt>Beast of Bodmin</dt>
+      <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+      <dt>Morgawr</dt>
+      <dd>A sea serpent.</dd>
+
+      <dt>Owlman</dt>
+      <dd>A giant owl-like creature.</dd>
+
+      <div>inhabiting</div>
+
+      <button popovertarget="my-dialog">Open dialog</button>
+
+      <dialog id="my-dialog" popover>
+      <p>This dialog was opened using a popovertargetaction attribute.</p>
+      <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
+      </dialog>
+
+    </dl>
+    <blockquote>
+      There is <del>nothing</del> <ins>no code</ins> either good or bad, but
+      <del>thinking</del> <ins>running it</ins> makes it so.
+    </blockquote>
+    <ins>important</ins>
+
+    <details>
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+
+    <p>
+      A <dfn id="def-validator">validator</dfn> is a program that checks for syntax
+      errors in code or documents.
+    </p>
+
+    <article>
+      <h1>How to be a wizard</h1>
+      <ol>
+        <li>Grow a long, majestic beard.</li>
+        <li>Wear a tall, pointed hat.</li>
+        <li>Have I mentioned the beard?</li>
+      </ol>
+      <footer>
+        <p>© 2018 Gandalf</p>
+        <small>
+          Copyright © 2023 Football History Archives. All Rights Reserved.
+        </small>
+      </footer>
+
+      <ul>
+        <li><a href="https://example.com">Website</a></li>
+        <li><a href="mailto:m.bluth@example.com">Email</a></li>
+        <li><a href="tel:+123456789">Phone</a></li>
+      </ul>
+
+    </article>
+
+    <p>
+      You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your
+      <abbr>HTML</abbr> (HyperText Markup Language). Using style sheets, you can
+      keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content
+      layer separate. This is called "separation of concerns."
+    </p>
+
+
+    <address>
+      <a href="mailto:jim@example.com">jim@example.com</a><br />
+      <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    </address>
+    <article class="forecast">
+      <h1>Weather forecast for Seattle</h1>
+      <article class="day-forecast">
+        <h2>03 March 2018</h2>
+        <p>Rain.</p>
+      </article>
+      <article class="day-forecast">
+        <h2>04 March 2018</h2>
+        <p>Periods of rain.</p>
+      </article>
+      <article class="day-forecast">
+        <h2>05 March 2018</h2>
+        <p>Heavy rain.</p>
+      </article>
+    </article>
+
+    <p>
+      Salamanders are a group of amphibians with a lizard-like appearance, including
+      short legs and a tail in both larval and adult forms.
+    </p>
+    <aside>
+      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <figure>
+      <figcaption>Listen to the T-Rex:</figcaption>
+      <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio>
+      <a href="/shared-assets/audio/t-rex-roar.mp3"> Download audio </a>
+    </figure>
+    <audio controls>
+      <source src="myAudio.mp3" type="audio/mpeg" />
+        <source src="myAudio.ogg" type="audio/ogg" />
+          <p>
+            Download <a href="myAudio.mp3" download="myAudio.mp3">MP3</a> or
+            <a href="myAudio.ogg" download="myAudio.ogg">OGG</a> audio.
+          </p>
+    </audio>
+    <p>
+      The two most popular science courses offered by the school are
+      <b class="term">chemistry</b> (the study of chemicals and the composition of
+      substances) and <b class="term">physics</b> (the study of the nature and
+      properties of matter and energy).
+    </p>
+
+    <ul>
+      <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+      <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+      <li><span class="name">سما</span>: 3rd place</li>
+      <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+      <li><span class="name" dir="auto">سما</span>: 5th place</li>
+    </ul>
+
+    <h1>Famous seaside songs</h1>
+
+    <p>The English song "Oh I do like to be beside the seaside"</p>
+
+    <p>
+      Looks like this in Hebrew:
+      <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span>
+    </p>
+
+    <p>
+      In the computer's memory, this is stored as
+      <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo>
+    </p>
+
+    <div>
+      <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>
+          Words can be like X-rays, if you use them properly—they'll go through
+          anything. You read and you're pierced.
+        </p>
+      </blockquote>
+      <p>—Aldous Huxley, <cite>Brave New World</cite></p>
+    </div>
+
+    <p>
+      O'er all the hilltops<br />
+      Is quiet now,<br />
+      In all the treetops<br />
+      Hearest thou<br />
+      Hardly a breath;<br />
+      The birds are asleep in the trees:<br />
+      Wait, soon like these<br />
+      Thou too shalt rest.
+    </p>
+
+    <button class="favorite styled" type="file">Add to favorites</button>
+    <input type="submit">
+    <canvas width="200" height="300">
+      An alternative text describing what your canvas displays.
+    </canvas>
+
+    <table>
+      <caption>
+        He-Man and Skeletor facts
+      </caption>
+      <tbody>
+        <tr>
+          <td></td>
+          <th scope="col" class="heman">He-Man</th>
+          <th scope="col" class="skeletor">Skeletor</th>
+        </tr>
+        <tr>
+          <th scope="row">Role</th>
+          <td>Hero</td>
+          <td>Villain</td>
+        </tr>
+        <tr>
+          <th scope="row">Weapon</th>
+          <td>Power Sword</td>
+          <td>Havoc Staff</td>
+        </tr>
+        <tr>
+          <th scope="row">Dark secret</th>
+          <td>Expert florist</td>
+          <td>Cries at romcoms</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <figure>
+      <blockquote>
+        <p>
+          It was a bright cold day in April, and the clocks were striking thirteen.
+        </p>
+      </blockquote>
+      <figcaption>
+        First sentence in
+        <cite
+          ><a href="http://www.george-orwell.org/1984/0.html"
+            >Nineteen Eighty-Four</a
+          ></cite
+        >
+        by George Orwell (Part 1, Chapter 1).
+      </figcaption>
+    </figure>
+
+    <p>
+      The <code>push()</code> method adds one or more elements to the end of an
+      array and returns the new length of the array.
+    </p>
+
+    <table>
+      <caption>head of table</caption>
+      <colgroup>
+        <col/>
+        <col span="2" class="batman" />
+        <col span="2" class="flash" />
+      </colgroup>
+    </table>
+
+    <table>
+      <caption>
+        Superheros and sidekicks
+      </caption>
+      <colgroup>
+        <col />
+        <col span="2" class="batman" />
+        <col span="2" class="flash" />
+      </colgroup>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col">Batman</th>
+          <th scope="col">Robin</th>
+          <th scope="col">The Flash</th>
+          <th scope="col">Kid Flash</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Skill</th>
+          <td>Smarts, strong</td>
+          <td>Dex, acrobat</td>
+          <td>Super speed</td>
+          <td>Super speed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>New Products:</p>
+    <ul>
+      <li><data value="398">Mini Ketchup</data></li>
+      <li><data value="399">Jumbo Ketchup</data></li>
+      <li><data value="400">Mega Jumbo Ketchup</data></li>
+    </ul>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist>
+  </body>
+  <p>a have <del>nothing</del> to tell you</p>
+  <p>keep the door ajar, <em>Now!</em></p>
+  <form>
+    <fieldset>
+      <legend>Choose your favorite monster</legend>
+
+      <input type="radio" id="kraken" name="monster" value="K" />
+      <label for="kraken">Kraken</label><br />
+
+      <input type="radio" id="sasquatch" name="monster" value="S" />
+      <label for="sasquatch">Sasquatch</label><br />
+
+      <input type="radio" id="mothman" name="monster" value="M" />
+      <label for="mothman">Mothman</label>
+    </fieldset>
+  </form>
+  <figure>
+    <img
+      src="/shared-assets/images/examples/elephant.jpg"
+      alt="Elephant at sunset" />
+    <figcaption>An elephant at sunset</figcaption>
+
+  </figure>
+  <form action="" method="get" class="form-example">
+    <div class="form-example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <div class="form-example">
+      <input type="submit" value="Subscribe!" />
+    </div>
+  </form>
+  <header></header>
+  <article></article>
+  <footer></footer>
+
+  <h1>Beetles</h1>
+  <h2>External morphology</h2>
+  <h3>Head</h3>
+  <h4>Mouthparts</h4>
+  <h3>Thorax</h3>
+  <h4>Prothorax</h4>
+  <h4>Pterothorax</h4>
+
+  <hgroup>
+  <h1>Frankenstein</h1>
+  <p>Or: The Modern Prometheus</p>
+  </hgroup>
+  <p>
+    Victor Frankenstein, a Swiss scientist, has a great ambition: to create
+    intelligent life. But when his creature first stirs, he realizes he has made a
+    monster. A monster which, abandoned by his master and shunned by everyone who
+    sees it, follows Dr Frankenstein to the very ends of the earth.
+  </p>
+
+  <p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+  <hr />
+
+  <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+  <i>port</i>
+
+  <iframe
+    id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="http://localhost:8989">
+  </iframe>
+
+  <p>
+    The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where
+    <var>l</var> represents the length, <var>w</var> the width and
+    <var>h</var> the height of the box.
+  </p>
+
+  <div id="example-paragraphs">
+    <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+    <p>Fernstraßen<wbr />bau<wbr />privat<wbr />finanzierungs<wbr />gesetz</p>
+    <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+  </div>
+
+  <p>
+    You could use this element to highlight <u>speling</u> mistakes, so the writer
+    can <u>corect</u> them.
+  </p>
+
+  <p>
+    The Cure will be celebrating their 40th anniversary on
+    <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+  </p>
+
+  <picture>
+    <source
+      srcset="/shared-assets/images/examples/surfer.jpg"
+      media="(orientation: portrait)" />
+      <img src="/shared-assets/images/examples/painted-hand.jpg" alt="" />
+  </picture>
+  <p>&ldquo;You're late!&rdquo;</p>
+  <del>
+    <p>&ldquo;I apologize for the delay.&rdquo;</p>
+  </del>
+  <ins cite="../how-to-be-a-wizard.html" datetime="2018-05">
+    <p>&ldquo;A wizard is never late &hellip;&rdquo;</p>
+  </ins>
+
+  <p>
+    <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+  </p>
+
+  <p>
+    The Cure will be celebrating their 40th anniversary on
+    <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+  </p>
+
+  <textarea
+    name="textarea"
+    rows="5"
+    cols="30"
+    placeholder="Comment text." style="resize: none;"></textarea>
+
+  <textarea style="resize: none;" placeholder="hello"></textarea>
+  <p>
+    Almost every developer's favorite molecule is
+    C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as
+    "caffeine."
+  </p>
+
+  <p>
+    ... the most important rule, the rule you can never forget, no matter how much
+    he cries, no matter how much he begs:
+    <strong>never feed him after midnight</strong>.
+  </p>
+  <select>
+    <option>'</option>
+  </select>
+
+  <article>
+    <section>
+      <p></p>
+    </section>
+
+  </article>
+  <video controls width="250" height="200" muted>
+    <source src="/shared-assets/videos/flower.webm" type="video/webm" />
+      <source src="/shared-assets/videos/flower.mp4" type="video/mp4" />
+        Download the
+        <a href="/shared-assets/videos/flower.webm">WEBM</a>
+        or
+        <a href="/shared-assets/videos/flower.mp4">MP4</a>
+        video.
+  </video>
+
+  <p> normal <small>small</small></p>
+  <p>
+    Add the <span class="ingredient">basil</span>,
+    <span class="ingredient">pine nuts</span> and
+    <span class="ingredient">garlic</span> to a blender and blend into a paste.
+  </p>
+
+  <header>
+    <h1>Movie website</h1>
+    <search>
+    <form action="./search/">
+      <label for="movie">Find a Movie</label>
+      <input type="search" id="movie" name="q" />
+      <button type="submit">Search</button>
+    </form>
+    </search>
+  </header>
+
+  <p>I was trying to boot my computer, but I got this hilarious message:</p>
+
+  <p>
+    <samp>Keyboard not found <br />Press F1 to continue</samp>
+  </p>
+  <p><s>There will be a few tickets available at the box office tonight.</s></p>
+
+  <p>SOLD OUT!</p>
+  <ruby>
+    漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+  </ruby>
+  <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+
+  <p>
+    When Dave asks HAL to open the pod bay door, HAL answers:
+    <q
+      cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">
+      I'm sorry, Dave. I'm afraid I can't do that.
+    </q>
+  </p>
+  <label for="file">File progress:</label>
+  <pre>
+             S
+             A
+            LUT
+             M
+            O N
+            D  E
+            DONT
+          JE SUIS
+          LA  LAN
+          G U E  É
+         L O Q U E N
+        TE      QUESA
+       B  O  U  C  H  E
+      O        P A R I S
+     T I R E   ET   TIRERA
+    T O U             JOURS
+   AUX                  A  L
+ LEM                      ANDS   - Apollinaire
+  </pre>
+  <section>
+    <optgroup>
+      <option>
+    </optgroup>
+  </section>
+  <progress id="file" max="100" value="70">70%</progress>
+  <hr>
+  <form id="example-form">
+    <input type="range" id="b" name="b" value="50" /> +
+    <input type="number" id="a" name="a" value="10" /> =
+    <output name="result" for="a b">60</output>
+  </form>
+
+  <object
+    type="video/mp4"
+    data="/shared-assets/videos/flower.mp4"
+    width="250"
+    height="200"></object>
+
+  <noscript>
+    <!-- anchor linking to external file -->
+    <a href="https://www.mozilla.org/">External Link</a>
+  </noscript>
+  <p>Rocks!</p>
+
+  <nav class="crumbs">
+    <ol>
+      <li class="crumb"><a href="#">Bikes</a></li>
+      <li class="crumb"><a href="#">BMX</a></li>
+      <li class="crumb">Jump Bike 3000</li>
+    </ol>
+  </nav>
+
+  <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="100">
+    at 50/100
+  </meter>
+  <geolocation>
+  <p>Your browser doesn't support the Geolocation element.</p>
+  </geolocation>
+  <div class="news">
+    <a href="#">NASA's Webb Delivers Deepest Infrared Image of Universe Yet</a>
+    <menu>
+      <li><button id="save">Save for later</button></li>
+      <li><button id="share">Share this news</button></li>
+    </menu>
+    <p>
+      Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and
+      other small creatures.
+    </p>
+    <p>
+      Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an
+      MDN page.
+    </p>
+  </div>
+  </body>
+  <script defer type="text/javascript">
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "green";
+    // Add a rectangle at (10, 10) with size 100x100 pixels
+    ctx.fillRect(10, 10, 100, 100);
+  </script>
+</html>
